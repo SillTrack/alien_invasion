@@ -30,5 +30,6 @@ class Alien(Sprite):
 
     def update(self,) -> None:
         """Перемещает прищельца вправо или влево """
-        self.x += (self.settings.alien_speed * self.settings.fleet_direction)
+        self.x += (self.settings.alien_speed_factor *
+                   self.settings.fleet_direction)
         self.rect.x = self.x
